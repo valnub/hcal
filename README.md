@@ -1,8 +1,9 @@
 # hcal
 HTML5 calendar widget inspired by iOS
 
-This HTML component looks pretty similar to the native calendar app of iOS. It's 100% JavaScript-free, dead simple (just add one single CSS file and you're ready to go) and small in file size (just 4kb).
+This HTML component looks pretty similar to the native calendar app of iOS. It's 100% JavaScript-free, dead simple (just add one single CSS file and you're ready to go), small in file size (just 4kb) and scales to any window/screen size.
 
+![Smartphone portrait mode](https://raw.githubusercontent.com/valnub/hcal/master/screens/screen1.jpg)
 
 ## Requirements
 
