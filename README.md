@@ -7,7 +7,8 @@ This HTML component looks pretty similar to the native calendar app of iOS. It's
 
 ## Requirements
 
-It is recommended to use normalize.css - See /examples folder.
+- normalize.css - See /examples folder.
+- **No** JavaScript, **no** jQuery or whatsoever
 
 ## Browser support
 
