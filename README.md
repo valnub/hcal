@@ -218,7 +218,7 @@ If you want to add an appointment, just find the div item with class hcal-body-r
 Into this item, you simply add as first child a div like this:
 
 ```html
-<div class="hcal-body-row-item hcal-duration-3h hcal-body-rot-item-color01">
+<div class="hcal-body-row-item hcal-duration-3h hcal-body-item-color01">
   <h3 class="hcal-body-row-item-headline">Barber appointment<span class="hcal-item-nr"> | Fakestreet 123</span></h3>
   <div class="hcal-body-row-item-text">Go to the barber, don't forget!</div>
 </div>
@@ -230,7 +230,7 @@ So, the result will be:
 
 ```html
 <div class="hcal-body-row">
-  <div class="hcal-body-row-item hcal-duration-3h hcal-body-rot-item-color01">
+  <div class="hcal-body-row-item hcal-duration-3h hcal-body-item-color01">
     <h3 class="hcal-body-row-item-headline">Barber appointment<span class="hcal-item-nr"> | Fakestreet 123</span></h3>
     <div class="hcal-body-row-item-text">Go to the barber, don't forget!</div>
   </div>
@@ -246,7 +246,7 @@ Note that you can configure the color and duration of the appointment by adding 
 - hcal-duration-3h // 3 hours (You can go up to 24h if you want)
 - hcal-body-item-color01 // Choose from colors 1-4 (blue, red, green, orange)
 
-<div class="hcal-body-row-item **hcal-duration-3h** **hcal-body-rot-item-color01**">
+<div class="hcal-body-row-item **hcal-duration-3h** **hcal-body-item-color01**">
 
 ## Dynamic markup generation
 
