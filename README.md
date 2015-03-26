@@ -244,7 +244,7 @@ So, the result will be:
 Note that you can configure the color and duration of the appointment by adding the following classes to hcal-body-row-item:
 
 - hcal-duration-3h // 3 hours (You can go up to 24h if you want)
-- hcal-body-rot-item-color01 // Choose from colors 1-4 (blue, red, green, orange)
+- hcal-body-item-color01 // Choose from colors 1-4 (blue, red, green, orange)
 
 <div class="hcal-body-row-item **hcal-duration-3h** **hcal-body-rot-item-color01**">
 
