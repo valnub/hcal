@@ -143,10 +143,10 @@ body{
   letter-spacing:normal;
 }
 
-.hcal .hcal-body-rot-item-color01{border-color: rgba(48,100,182,1);background-color: rgba(48,100,182,0.6);}
-.hcal .hcal-body-rot-item-color02{border-color: rgba(181,43,70,1);background-color: rgba(181,43,70,0.6);}
-.hcal .hcal-body-rot-item-color03{border-color: rgba(106,181,127,1);background-color: rgba(106,181,127,0.6);}
-.hcal .hcal-body-rot-item-color04{border-color: rgba(255,138,71,1);background-color: rgba(255,138,71,0.6);}
+.hcal .hcal-body-item-color01{border-color: rgba(48,100,182,1);background-color: rgba(48,100,182,0.6);}
+.hcal .hcal-body-item-color02{border-color: rgba(181,43,70,1);background-color: rgba(181,43,70,0.6);}
+.hcal .hcal-body-item-color03{border-color: rgba(106,181,127,1);background-color: rgba(106,181,127,0.6);}
+.hcal .hcal-body-item-color04{border-color: rgba(255,138,71,1);background-color: rgba(255,138,71,0.6);}
 
 .hcal .hcal-duration-1h{height:55px}
 .hcal .hcal-duration-2h{height:110px}
