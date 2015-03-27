@@ -126,6 +126,11 @@ body{
   line-height:16px;
   padding-right:5px;
   letter-spacing: -0.75px;
+  font-family:'Helvetica Neue';
+}
+
+.hcal .hcal-body-row-item .hcal-body-row-item-headline *{
+  font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica,  arial, sans-serif;
 }
 
 .hcal .hcal-body-row-item .hcal-body-row-item-text{
