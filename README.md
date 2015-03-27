@@ -12,7 +12,7 @@ This HTML component looks pretty similar to the native calendar app of iOS. It's
 
 ## Browser support
 
-Only Safari Browser on iOS7 and iOS8 are supported.
+Only Safari browser on iOS7 and iOS8 are supported.
 
 ## How to use
 
@@ -48,7 +48,7 @@ To add an appointment to your calendar, just call:
 $hcal.addHcalAppointment(1, 2, 'Go to the barber', 'Barbers place', 'Do not forget this!', 2);
 ```
 
-This will give you a new entry in the calendar at 1am for 2 hours. Title will be 'Go to the barber', the place is 'Barbers place', description is 'Do not forget this!' and color scheme 2 (red) will be used.
+This will give you a new entry in the calendar at 1am for 2 hours. Title will be 'Go to the barber', the place is 'Barbers place', description is 'Do not forget this!' and color scheme 2 (red) will be used (you can choose between up to 4 predefined color schemes).
 
 More examples:
 
