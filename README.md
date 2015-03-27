@@ -1,5 +1,7 @@
 # hcal
-HTML5 calendar widget inspired by iOS - Created by the awesome eCommerce team at www.hse24.de
+
+## HTML5 calendar widget inspired by iOS
+Created by the awesome eCommerce team at www.hse24.de
 
 This HTML component looks pretty similar to the native calendar app of iOS. It's dead simple to use, small in file size (less than 5kb) and scales to any window/screen size.
 
