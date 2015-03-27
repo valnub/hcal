@@ -31,16 +31,17 @@ Then add the javascript lib to the end of `<body>`. Make sure that jQuery has be
 Now, you're ready to initialize:
 
 ```javascript
-  // Show dates from 25h to 31st
-  var dates = [25, 26, 27, 28, 29, 30, 31];
-  
-  // Remember to replace 'yourContainer' with the id or class of the element in which you want hcal to appear
-  var $hcal = $('#yourContainer').hcal(dates, 3, 'Thursday, March 28th 2015', 'us');
+  $(document).ready(function () {
+    // Show dates from 25h to 31st
+    var dates = [25, 26, 27, 28, 29, 30, 31];
+
+    // Remember to replace 'yourContainer' with the id or class of the element in which you want hcal to appear
+    var $hcal = $('#yourContainer').hcal(dates, 3, 'Thursday, March 28th 2015', 'us');
+  });
 ```
 
 This will give you an empty calendar with dates from 25th to 31st in the header section. The fourth element (index=3) has a round circle. Below the dates, the string 'March 28th 2015' will appear. Time settings are set to U.S. standard (1am instead of 01:00). If you prefer German/European setting use 'ger' instead of 'us'.
 
-<<<<<<< HEAD
 To add an appointment to your calendar, just call:
 
 ```javascript
@@ -50,38 +51,6 @@ $hcal.addHcalAppointment(1, 2, 'Go to the barber', 'Barbers place', 'Do not forg
 This will give you a new entry in the calendar at 1am for 2 hours. Title will be 'Go to the barber', the place is 'Barbers place', description is 'Do not forget this!' and color scheme 2 (red) will be used.
 
 More examples:
-=======
-```html
-<div class="hcal-body-row-item hcal-duration-3h hcal-body-item-color01">
-  <h3 class="hcal-body-row-item-headline">Barber appointment<span class="hcal-item-nr"> | Fakestreet 123</span></h3>
-  <div class="hcal-body-row-item-text">Go to the barber, don't forget!</div>
-</div>
-```
-
-Add your headline to the `<h3>` tag and add a description to hcal-body-row-item-text.
-
-So, the result will be:
-
-```html
-<div class="hcal-body-row">
-  <div class="hcal-body-row-item hcal-duration-3h hcal-body-item-color01">
-    <h3 class="hcal-body-row-item-headline">Barber appointment<span class="hcal-item-nr"> | Fakestreet 123</span></h3>
-    <div class="hcal-body-row-item-text">Go to the barber, don't forget!</div>
-  </div>
-  <div class="hcal-body-row-time">03:00</div>
-  <hr class="hcal-body-row-hr">
-</div>
-```
-
-## Configuration
-
-Note that you can configure the color and duration of the appointment by adding the following classes to hcal-body-row-item:
-
-- hcal-duration-3h // 3 hours (You can go up to 24h if you want)
-- hcal-body-item-color01 // Choose from colors 1-4 (blue, red, green, orange)
-
-<div class="hcal-body-row-item **hcal-duration-3h** **hcal-body-item-color01**">
->>>>>>> origin/master
 
 ```javascript
 // Start at 8am for two hours, use rgb color [154,123,165] instead of predefined color sheme
