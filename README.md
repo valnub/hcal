@@ -12,7 +12,9 @@ This HTML component looks pretty similar to the native calendar app of iOS. It's
 
 ## Browser support
 
-Only Safari browser on iOS7 and iOS8 are supported.
+- Safari on iOS
+- Google Chrome on Desktop Windows
+- (Want more? Let me know!)
 
 ## How to use
 
