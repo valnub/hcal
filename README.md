@@ -62,6 +62,7 @@ $hcal.addHcalAppointment(8, 2, 'Go to school', 'School', 'Learn some cool stuff'
 
 // Start at 8pm for 3 hours and use color scheme 4
 $hcal.addHcalAppointment(20, 3, 'Meet Cindy', 'Cindy\'s home', ';-)', 4);
+```
 
 ## License
 
