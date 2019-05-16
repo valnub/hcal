@@ -60,9 +60,10 @@
    * Creates the body
    *
    * @param {string} format 'us' or 'ger'
+   * @param {number} start hour
    * @return {jQuery} The body
    */
-  function createHcalBody(format) {
+  function createHcalBody(format, starthour) {
     var $body = $('<div class="hcal-body">'),
       i = 0,
       $row,
@@ -70,7 +71,7 @@
       $hr,
       timevalue;
     
-    for (i = 0; i < 25; i = i + 1) {
+    for (i = starthour; i < 25; i = i + 1) {
       timevalue = format === 'ger' ? i + ':00' : (i % 12) + (i < 12 ? 'am' : 'pm');
       if (format !== 'ger') {
         // Fix US values
@@ -94,13 +95,14 @@
    * @param {number} markerpos The position which day should be marked with a circle in the header
    * @param {string} today The today-string
    * @param {string} format 'us' or 'ger' (2am vs. 02:00)
+   * @param {number} start hour
    */
-  function init(el, dates, markerpos, today, format) {
+  function init(el, dates, markerpos, today, format, starthour) {
     $container = el;
     $hcal = $('<div class="hcal">');
     
     $hcalHeader = createHcalHeader(dates, markerpos, today, format).appendTo($hcal);
-    $hcalBody = createHcalBody(format).appendTo($hcal);
+    $hcalBody = createHcalBody(format, starthour).appendTo($hcal);
     
     $hcal.appendTo($container);
   }
@@ -154,10 +156,11 @@
    * @param {number} markerpos The position which day should be marked with a circle in the header
    * @param {string} today The today-string
    * @param {string} format 'us' or 'ger' (2am vs. 02:00)
+   * @param {number} start hour (default=0)
    * @return {jQuery} The selected element
    */
-  $.fn.hcal = function (dates, markerpos, today, format) {
-    init(this, dates, markerpos, today, format);
+  $.fn.hcal = function (dates, markerpos, today, format, starthour=0) {
+    init(this, dates, markerpos, today, format, starthour);
     return this;
   };
 
