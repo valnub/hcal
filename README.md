@@ -10,7 +10,7 @@ This HTML component looks pretty similar to the native calendar app of iOS. It's
 ## Requirements
 
 - normalize.css
-- jQuery 2.x (probably also works with 1.x but not tested)
+- jQuery
 
 ## Browser support
 
@@ -62,6 +62,16 @@ $hcal.addHcalAppointment(8, 2, 'Go to school', 'School', 'Learn some cool stuff'
 
 // Start at 8pm for 3 hours and use color scheme 4
 $hcal.addHcalAppointment(20, 3, 'Meet Cindy', 'Cindy\'s home', ';-)', 4);
+```
+
+Additional parameters (optional):
+
+```javascript
+// If you want your calendar to begin at a different hour, at it as
+// last parameter during initialization:
+var $hcal = $('#yourContainer').hcal(dates, 3, 'Thursday, March 28th 2015', 'us', 5);
+
+// The line above will make the calendar start at 5am instead of 0 (which is default).
 ```
 
 ## License

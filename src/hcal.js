@@ -60,7 +60,7 @@
    * Creates the body
    *
    * @param {string} format 'us' or 'ger'
-   * @param {number} start hour
+   * @param {number} startHour The hour to start at
    * @return {jQuery} The body
    */
   function createHcalBody(format, starthour) {
@@ -95,7 +95,7 @@
    * @param {number} markerpos The position which day should be marked with a circle in the header
    * @param {string} today The today-string
    * @param {string} format 'us' or 'ger' (2am vs. 02:00)
-   * @param {number} start hour
+   * @param {number} startHour The hour to start at
    */
   function init(el, dates, markerpos, today, format, starthour) {
     $container = el;
@@ -156,7 +156,7 @@
    * @param {number} markerpos The position which day should be marked with a circle in the header
    * @param {string} today The today-string
    * @param {string} format 'us' or 'ger' (2am vs. 02:00)
-   * @param {number} start hour (default=0)
+   * @param {number} startHour (optional) The hour to start at (default = 0)
    * @return {jQuery} The selected element
    */
   $.fn.hcal = function (dates, markerpos, today, format, starthour=0) {
