@@ -69,7 +69,6 @@ Additional parameters (optional):
 // If you want your calendar to begin at a different hour, at it as
 // last parameter during initialization:
 var $hcal = $('#yourContainer').hcal(dates, 3, 'Thursday, March 28th 2015', 'us', 5);
-
 // The line above will make the calendar start at 5am instead of 0 (which is default).
 ```
 
