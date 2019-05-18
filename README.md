@@ -18,8 +18,9 @@ This HTML component looks pretty similar to the native calendar app of iOS. It's
 
 ## How to use
 
-First, add hcal.min.css to the `<head>` section of your HTML file from the build directory:
+First, add hcal.min.css and normalize.css to the `<head>` section of your HTML file from the build directory:
 ```html
+<link rel="stylesheet" href="normalize.css">
 <link rel="stylesheet" href="hcal.min.css">
 ```
 
